@@ -1,0 +1,16 @@
+logs
+*.log
+pids
+*.pid
+*.seed
+npm-debug*
+lib-cov
+coverage/
+.grunt
+.lock-wscript
+node_modules/
+.idea
+output/
+output.tar.gz
+app/
+runtime/
