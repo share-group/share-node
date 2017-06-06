@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "author": "ruanzhijun",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+hhttps://github.com/share-group/share-node.git"
+  },
   "bugs": {
     "url": "https://github.com/share-group/share-node/issues"
   },
