@@ -1,4 +1,3 @@
-[![thinkjs](https://p.ssl.qhimg.com/d/inn/e270ec1e/logo_large.jpg)](https://thinkjs.org/)
 
 -----
 
