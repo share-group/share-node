@@ -1,11 +1,11 @@
 {
   "name": "share-node",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "ruanzhijun",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+hhttps://github.com/share-group/share-node.git"
+    "url": "git+https://github.com/share-group/share-node.git"
   },
   "bugs": {
     "url": "https://github.com/share-group/share-node/issues"
