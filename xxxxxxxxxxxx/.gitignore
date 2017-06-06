@@ -14,4 +14,3 @@ output/
 output.tar.gz
 app/
 runtime/
-*.lock
