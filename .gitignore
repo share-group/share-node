@@ -14,5 +14,8 @@ output/
 output.tar.gz
 app/
 runtime/
+node_modules/
 *.lock
+*.json
 .nyc_output/
+coverage/
