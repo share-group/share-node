@@ -16,5 +16,6 @@ app/
 runtime/
 node_modules/
 *.lock
+package-lock.json
 .nyc_output/
 coverage/
