@@ -17,25 +17,7 @@
     "mocha": true
   },
   "globals": {
-    "ERROR": true,
-    "jwt": true,
-    "think": true,
-    "redis": true,
-    "mongoose": true,
-    "ErrorCode": true,
-    "requireService": true,
-    "requireCommon": true,
-    "requireCommonModel": true,
-    "requireCommonService": true,
-    "requireModel": true,
-    "getCurrentTime": true,
-    "getCurrentTimestamp": true,
-    "requireBaseModel": true,
-    "requireBaseLogic": true,
-    "requireBaseController": true,
-    "requireThirdparty": true,
-    "getTestLogger": true,
-    "getLogger": true
+    "share": true
   },
   "parserOptions": {
     "ecmaVersion": 2017
