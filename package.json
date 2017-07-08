@@ -37,7 +37,7 @@
     "koa-json": "^2.0.2",
     "koa-jwt": "^2.2.3",
     "koa-cors": "^0.0.16",
-    "koa-logger": "^3.0.1",
+    "humanize-number": "0.0.2",
     "log4js": "^2.0.0"
   },
   "devDependencies": {
