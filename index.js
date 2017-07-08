@@ -1,1 +1,1 @@
-console.log('hellow share-node');
+module.exports = require('./lib/http');
