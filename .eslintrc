@@ -17,7 +17,8 @@
     "mocha": true
   },
   "globals": {
-    "share": true
+    "share": true,
+    "getLogger": true
   },
   "parserOptions": {
     "ecmaVersion": 2017
