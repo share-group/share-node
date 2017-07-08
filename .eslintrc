@@ -18,6 +18,7 @@
   },
   "globals": {
     "share": true,
+    "getController": true,
     "getLogger": true
   },
   "parserOptions": {
