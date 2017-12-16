@@ -7,7 +7,8 @@
   },
   "globals": {
     "share": true,
-    "getController": true
+    "getController": true,
+    "getLogger": true
   },
   "rules": {
     "max-depth": [

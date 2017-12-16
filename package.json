@@ -38,7 +38,6 @@
     "koa-cors": "^0.0.16",
     "koa-helmet": "^3.1.0",
     "koa-json": "^2.0.2",
-    "koa-jwt": "^3.2.2",
     "mongoose": "^4.11.3",
     "mysql": "^2.13.0",
     "tracer": "^0.8.11"
