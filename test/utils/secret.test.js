@@ -1,5 +1,5 @@
 const test = require('ava');
-const { secret } = require('../index');
+const secret = require('../../lib/utils/secret');
 
 const exampleString = 'vbu987ftyukgilofYG^di78o89ygytcrs4YD^UF&IG*FCvbh987FUTYUIBIJ';
 

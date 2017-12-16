@@ -7,11 +7,7 @@
   },
   "globals": {
     "share": true,
-    "getController": true,
-    "getLogger": true
-  },
-  "parserOptions": {
-    "ecmaVersion": 2017
+    "getController": true
   },
   "rules": {
     "max-depth": [

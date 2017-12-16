@@ -1,5 +1,5 @@
 const test = require('ava');
-const { time } = require('../index');
+const time = require('../../lib/utils/time');
 
 test('test util.time.nowMillisecond()', async (t) => {
   t.is(Math.abs(time.nowMillisecond() - new Date().getTime()) <= 1, true);
