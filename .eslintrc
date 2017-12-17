@@ -10,7 +10,8 @@
     "getController": true,
     "getValidate": true,
     "getLogger": true,
-    "getJoi": true
+    "getJoi": true,
+    "getModel": true
   },
   "rules": {
     "max-depth": [
