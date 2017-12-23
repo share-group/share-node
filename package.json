@@ -14,7 +14,7 @@
   "scripts": {
     "init": "echo 'create a demo project!'",
     "eslint": "eslint lib/ --fix && eslint test/ --fix",
-    "test": "npm run eslint && nyc --reporter=text --reporter=text-summary ava --no-cache -c 8 -v -s ./test"
+    "test": "npm run eslint && nyc --reporter=text --reporter=text-summary ava --no-cache --fail-fast -c 8 -v ./test"
   },
   "keywords": [
     "cc"
@@ -22,12 +22,12 @@
   "dependencies": {
     "ava": "^0.24.0",
     "nyc": "^11.3.0",
-    "axios": "^0.17.1",
     "babel-eslint": "^8.0.3",
     "bluebird": "^3.5.0",
     "eslint": "^4.13.1",
     "eslint-config-airbnb": "^16.1.0",
     "fs-sync": "^1.0.4",
+    "cryptos":"^1.2.4",
     "humanize-number": "0.0.2",
     "ioredis": "^3.1.1",
     "joi": "^13.0.2",

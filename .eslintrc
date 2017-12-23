@@ -10,6 +10,7 @@
     "getController": true,
     "getValidate": true,
     "getLogger": true,
+    "getService": true,
     "getJoi": true,
     "getModel": true
   },
@@ -19,6 +20,9 @@
       {
         "max": 3
       }
+    ],
+    "object-curly-spacing": [
+      "off"
     ],
     "no-underscore-dangle": [
       "off"
