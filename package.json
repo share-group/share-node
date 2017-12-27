@@ -39,7 +39,7 @@
     "koa-helmet": "^3.1.0",
     "mongoose": "^4.11.3",
     "mysql": "^2.13.0",
-    "tracer": "^0.8.11"
+    "log4js": "^2.4.1"
   },
   "devDependencies": {
     "eslint-plugin-import": "^2.8.0",
