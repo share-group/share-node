@@ -1,6 +1,6 @@
 {
   "name": "share-node",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "author": "ruanzhijun",
   "license": "MIT",
   "repository": {
@@ -14,7 +14,7 @@
   "scripts": {
     "init": "echo 'create a demo project!'",
     "eslint": "eslint lib/ --fix && eslint test/ --fix --ignore-pattern _index.js",
-    "test": "npm run eslint && nyc --reporter=text --reporter=text-summary ava --no-cache --fail-fast -c 8 -v ./test"
+    "test": "npm run eslint && nyc --reporter=text --reporter=text-summary ava --no-cache -c 8 -v ./test"
   },
   "keywords": [
     "cc"
