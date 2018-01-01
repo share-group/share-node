@@ -1,4 +1,4 @@
-const test = require('ava');
+const test = require('../_index');
 const time = require('../../lib/utils/time');
 
 test('test util.time.nowMillisecond()', async (t) => {

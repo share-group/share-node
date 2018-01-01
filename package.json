@@ -1,6 +1,6 @@
 {
   "name": "share-node",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "author": "ruanzhijun",
   "license": "MIT",
   "repository": {
@@ -13,7 +13,7 @@
   "homepage": "https://github.com/share-group/share-node#readme",
   "scripts": {
     "init": "echo 'create a demo project!'",
-    "eslint": "eslint lib/ --fix && eslint test/ --fix",
+    "eslint": "eslint lib/ --fix && eslint test/ --fix --ignore-pattern _index.js",
     "test": "npm run eslint && nyc --reporter=text --reporter=text-summary ava --no-cache --fail-fast -c 8 -v ./test"
   },
   "keywords": [
