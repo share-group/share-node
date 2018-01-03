@@ -1,6 +1,6 @@
 {
   "name": "share-node",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "author": "ruanzhijun",
   "license": "MIT",
   "repository": {
@@ -12,6 +12,7 @@
   },
   "homepage": "https://github.com/share-group/share-node#readme",
   "scripts": {
+    "prepush": "eslint lib/ --fix && eslint test/ --ignore-pattern _index.js",
     "init": "echo 'create a demo project!'",
     "eslint": "eslint lib/ --fix && eslint test/ --fix --ignore-pattern _index.js",
     "test": "npm run eslint && nyc --reporter=text --reporter=text-summary ava --no-cache -c 8 -v ./test"
@@ -21,15 +22,12 @@
   ],
   "dependencies": {
     "ava": "^0.24.0",
-    "nyc": "^11.3.0",
-    "babel-eslint": "^8.0.3",
+    "babel-eslint": "^8.1.2",
     "bluebird": "^3.5.0",
-    "eslint": "^4.13.1",
+    "cryptos": "^1.2.4",
+    "eslint": "^4.14.0",
     "eslint-config-airbnb": "^16.1.0",
     "fs-sync": "^1.0.4",
-    "cryptos": "^1.2.4",
-    "humanize-number": "0.0.2",
-    "ioredis": "^3.1.1",
     "joi": "^13.0.2",
     "jsonwebtoken": "^8.1.0",
     "koa": "^2.3.0",
@@ -37,9 +35,10 @@
     "koa-convert": "^1.2.0",
     "koa-cors": "^0.0.16",
     "koa-helmet": "^3.1.0",
-    "mongoose": "^4.11.3",
+    "log4js": "^2.4.1",
+    "mongoose": "^4.13.8",
     "mysql": "^2.13.0",
-    "log4js": "^2.4.1"
+    "nyc": "^11.4.1"
   },
   "devDependencies": {
     "eslint-plugin-import": "^2.8.0",
