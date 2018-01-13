@@ -1,0 +1,1 @@
+const str = 'mongodb://kiskis:ilobliKLLOb8yfugvVov86fbku6fuygtcrtytkilijlkj@127.0.0.1:59358/kiskis';// const str = 'mongodb://128.0.0.1:59358/kiskis';let _url = str;const index = _url.indexOf('@');if (index > -1) {  _url = 'mongodb://' + _url.substring(index + 1);}console.log(_url);
