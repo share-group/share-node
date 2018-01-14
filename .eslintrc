@@ -21,6 +21,12 @@
         "max": 3
       }
     ],
+    "radix": [
+      "off"
+    ],
+    "max-len": [
+      "off"
+    ],
     "object-curly-spacing": [
       "off"
     ],
