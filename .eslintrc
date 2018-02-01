@@ -11,8 +11,8 @@
     "getValidate": true,
     "getLogger": true,
     "getService": true,
-    "getJoi": true,
-    "getModel": true
+    "getModel": true,
+    "getJoi": true
   },
   "rules": {
     "max-depth": [
@@ -41,6 +41,31 @@
     ],
     "class-methods-use-this": [
       "off"
+    ],
+    "no-restricted-syntax": [
+      "off"
+    ],
+    "no-await-in-loop": [
+      "off"
+    ],
+    "brace-style": [
+      "error",
+      "1tbs"
+    ],
+    "object-curly-newline": [
+      "off",
+      {
+        "minProperties": 100000
+      }
+    ],
+    "newline-per-chained-call": [
+      "off"
+    ],
+    "object-property-newline": [
+      "error",
+      {
+        "allowMultiplePropertiesPerLine": true
+      }
     ]
   }
 }
