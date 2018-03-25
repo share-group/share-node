@@ -33,3 +33,7 @@ test('test util.time.getDayStart()', async (t) => {
 test('test util.time.getDayStart()', async (t) => {
   t.is(time.getDayStart(1496327490000, 3), 1496505600000);
 });
+
+test('test util.time.getYearWeek()', async (t) => {
+  t.is(time.getYearWeek(1521973841000), 13);
+});
