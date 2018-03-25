@@ -1,6 +1,6 @@
 {
   "name": "share-node",
-  "version": "0.0.32",
+  "version": "0.0.45",
   "author": "ruanzhijun",
   "license": "MIT",
   "repository": {
@@ -37,9 +37,10 @@
     "koa-helmet": "^3.3.0",
     "log4js": "^2.5.3",
     "mkdirp": "^0.5.1",
-    "mongoose": "^5.0.8",
+    "mongoose": "^5.0.9",
     "mysql": "^2.15.0",
     "nyc": "^11.4.1",
+    "socket.io": "^2.0.4",
     "xml2js": "^0.4.19"
   },
   "devDependencies": {

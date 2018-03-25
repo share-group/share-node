@@ -25,3 +25,11 @@ test('test util.time.format()', async (t) => {
 test('test util.time.str2time()', async (t) => {
   t.is(time.str2time('2017-06-01 22:31:30'), 1496327490000);
 });
+
+test('test util.time.getDayStart()', async (t) => {
+  t.is(time.getDayStart(1496327490000), 1496246400000);
+});
+
+test('test util.time.getDayStart()', async (t) => {
+  t.is(time.getDayStart(1496327490000, 3), 1496505600000);
+});
