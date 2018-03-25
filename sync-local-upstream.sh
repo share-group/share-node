@@ -7,45 +7,64 @@
 # openSUSE repository. Install using sudo zypper install jq.
 # repository. Install using sudo pacman -Sy jq.
 # 
-# 检测是否安装命令后jason解析器
-# 
-if hash jq 2>/dev/null;
-    then
-       echo "jq installed!!"
-    else
-       if hash brew 2>/dev/null;
-         then
-            brew install jq
-         else
-            echo "Please refer to the comment installation for the jq tool in the corresponding OS."
-       fi
-fi
-
-#fork同步源
+ 
 function sync_fork() {
+
+orgin_git=""
+
+DIRFILES=`ls $1`
+if [[ $DIRFILES =~ "package.json" ]]
+then
+    # Verify that the command line Json parser is installed.
+    if hash jq 2>/dev/null;
+        then
+           echo "jq installed!!"
+        else
+           if hash brew 2>/dev/null;
+             then
+                brew install jq
+             else
+                echo "Please refer to the comment installation for the jq tool in the corresponding OS."
+           fi
+    fi
+    
+    #Get the source address in the package. Json.
+    orgin_git=$(cat package.json | jq '.repository.url')
+    orgin_git=${orgin_git##*+}
+    orgin_git=${orgin_git%%"\""}
+  else
+     echo -n  "please enter the source repository url ->  "
+     read  orgin_git
+     
+ fi
+
+
+
+#Syncing a Fork with the main repository
+function sync_source() {
    current_branch=$(git rev-parse --abbrev-ref HEAD)
   
    git fetch upstream
    git checkout master
    git merge upstream/master
+   git commit -m 'sync'
    git push # origin
    git checkout $current_branch
 }
 
-#读取package.json 中的源地址
-orgin_git=$(cat package.json | jq '.repository.url')
-orgin_git=${orgin_git##*+}
-orgin_git=${orgin_git%%"\""}
 
-#检查local项目是否存在upstream 
-#存在直接同步fork
-#不存在为fork添加upstream
+#Check if the local repository exists upstream.
+#If it exists, it is in direct sync.
+#If not, add upstream to fork.
 my_remote_repository=$(git remote -v)
 echo $my_remote_repository
 if [[ $my_remote_repository =~ "upstream" ]]
 then
-   sync_fork
+   sync_source
 else
    git remote add upstream $orgin_git
-   sync_fork
+   sync_source
 fi
+}
+
+sync_fork
