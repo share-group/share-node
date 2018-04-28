@@ -30,7 +30,7 @@
     "fs-sync": "^1.0.4",
     "joi": "^13.2.0",
     "jsonwebtoken": "^8.2.1",
-    "koa": "^2.5.0",
+    "koa": "^2.5.1",
     "koa-body": "^2.5.0",
     "koa-convert": "^1.2.0",
     "koa-cors": "0.0.16",
