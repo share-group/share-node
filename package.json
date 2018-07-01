@@ -22,31 +22,31 @@
   ],
   "dependencies": {
     "ava": "^0.25.0",
-    "babel-eslint": "^8.2.3",
+    "babel-eslint": "^8.2.5",
     "bluebird": "^3.5.1",
     "cryptos": "^1.2.4",
-    "eslint": "^4.19.1",
-    "eslint-config-airbnb": "^16.1.0",
+    "eslint": "^5.0.1",
+    "eslint-config-airbnb": "^17.0.0",
     "fs-sync": "^1.0.4",
     "joi": "^13.4.0",
     "jsonwebtoken": "^8.3.0",
     "koa": "^2.5.1",
-    "koa-body": "^4.0.3",
+    "koa-body": "^4.0.4",
     "koa-convert": "^1.2.0",
     "koa-cors": "0.0.16",
     "koa-helmet": "^4.0.0",
-    "log4js": "^2.9.0",
+    "log4js": "^2.10.0",
     "mime-types": "^2.1.18",
     "mkdirp": "^0.5.1",
-    "mongoose": "^5.1.5",
+    "mongoose": "^5.1.7",
     "mysql": "^2.15.0",
     "nyc": "^12.0.2",
     "socket.io": "^2.1.1",
     "xml2js": "^0.4.19"
   },
   "devDependencies": {
-    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.9.1"
+    "eslint-plugin-react": "^7.10.0"
   }
 }
