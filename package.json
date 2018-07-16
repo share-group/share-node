@@ -1,6 +1,6 @@
 {
   "name": "share-node",
-  "version": "0.0.62",
+  "version": "0.0.63",
   "author": "ruanzhijun",
   "license": "MIT",
   "repository": {
@@ -22,23 +22,23 @@
   ],
   "dependencies": {
     "ava": "^0.25.0",
-    "babel-eslint": "^8.2.5",
+    "babel-eslint": "^8.2.6",
     "bluebird": "^3.5.1",
     "cryptos": "^1.2.4",
-    "eslint": "^5.0.1",
+    "eslint": "^5.1.0",
     "eslint-config-airbnb": "^17.0.0",
     "fs-sync": "^1.0.4",
     "joi": "^13.4.0",
     "jsonwebtoken": "^8.3.0",
-    "koa": "^2.5.1",
+    "koa": "^2.5.2",
     "koa-body": "^4.0.4",
     "koa-convert": "^1.2.0",
     "koa-cors": "0.0.16",
     "koa-helmet": "^4.0.0",
-    "log4js": "^2.10.0",
+    "log4js": "^3.0.0",
     "mime-types": "^2.1.18",
     "mkdirp": "^0.5.1",
-    "mongoose": "^5.1.7",
+    "mongoose": "^5.2.3",
     "mysql": "^2.15.0",
     "nyc": "^12.0.2",
     "socket.io": "^2.1.1",
@@ -46,7 +46,7 @@
   },
   "devDependencies": {
     "eslint-plugin-import": "^2.13.0",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.10.0"
   }
 }
